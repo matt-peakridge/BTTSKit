@@ -1,32 +1,32 @@
 import Foundation
 
 public protocol FootballMatchSummary {
-    var id: UUID? { get set }
+    var id: UUID? { get }
     
-    var division: String { get set }
-    var date: Date { get set }
-    var homeTeam: String { get set }
-    var awayTeam: String { get set }
-    var ftHomeGoals: Int { get set }
-    var ftAwayGoals: Int { get set }
-    var ftResult: String { get set }
-    var htHomeGoals: Int { get set }
-    var htAwayGoals: Int { get set }
-    var htResult: String { get set }
+    var division: String { get }
+    var date: Date { get }
+    var homeTeam: String { get }
+    var awayTeam: String { get }
+    var ftHomeGoals: Int { get }
+    var ftAwayGoals: Int { get }
+    var ftResult: String { get }
+    var htHomeGoals: Int { get }
+    var htAwayGoals: Int { get }
+    var htResult: String { get }
     
-    var referee: String? { get set }
-    var shotsHome: Int? { get set }
-    var shotsAway: Int? { get set }
-    var shotsTargetHome: Int? { get set }
-    var shotsTargetAway: Int? { get set }
-    var foulsHome: Int? { get set }
-    var foulsAway: Int? { get set }
-    var cornersHome: Int? { get set }
-    var cornersAway: Int? { get set }
-    var yellowHome: Int? { get set }
-    var yellowAway: Int? { get set }
-    var redHome: Int? { get set }
-    var redAway: Int? { get set }
+    var referee: String? { get }
+    var shotsHome: Int? { get }
+    var shotsAway: Int? { get }
+    var shotsTargetHome: Int? { get }
+    var shotsTargetAway: Int? { get }
+    var foulsHome: Int? { get }
+    var foulsAway: Int? { get }
+    var cornersHome: Int? { get }
+    var cornersAway: Int? { get }
+    var yellowHome: Int? { get }
+    var yellowAway: Int? { get }
+    var redHome: Int? { get }
+    var redAway: Int? { get }
 }
 
 public extension FootballMatchSummary {
