@@ -98,6 +98,17 @@ final class BTTSManagerTests: XCTestCase {
         XCTAssertEqual(actualProbability, expectedProbability)
     }
     
+    func testMatchBetweenTwoTeamsWhoHaveNeverBeenRefereedByHWebbShouldReturnZero() {
+        // Arrange
+        sut = BTTSManager()
+        let matches = BTTSManagerTests.mockSeasonGameData
+        
+        // Act
+        let actualProbability = sut.probability(type: .headToHeadSensitive, home: "Fulham", away: "Arsenal", referee: "H Webb", matches: matches)
+        
+        // Assert
+        XCTAssertEqual(actualProbability, 0.0)
+    }
     
     // MARK: - Sanity Testing
     func testRandomTests() {

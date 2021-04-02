@@ -41,6 +41,8 @@ public class BTTSManager {
         let percentage = (100.0 / Double(filteredGames.count)) * Double(bttsGame.count)
         let percentageRounded = String(format: "%.1f", percentage)
         
+        guard percentage.isNaN == false else { return 0.0 }
+        
         return Double(percentageRounded) ?? 0
     }
 }
