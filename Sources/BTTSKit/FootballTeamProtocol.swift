@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol FootballTeamm {
+public protocol FootballTeam {
     var id: UUID? { get }
     
     var division: String { get }
